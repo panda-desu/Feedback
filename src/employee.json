@@ -1,0 +1,114 @@
+[
+  {
+    "id": 1,
+    "firstname": "Donald",
+    "lastname": "Farrell",
+    "emails": "Foster_Upton@gmail.com",
+    "department": "Movies",
+    "position": "IT"
+  },
+  {
+    "id": 2,
+    "firstname": "Caroline",
+    "lastname": "Bergnaum",
+    "emails": "Deon_Schimmel31@gmail.com",
+    "department": "Home",
+    "position": "Designer"
+  },
+  {
+    "id": 3,
+    "firstname": "Ernesto",
+    "lastname": "Rosenbaum",
+    "emails": "Haley_Lynch44@example.com",
+    "department": "Industrial",
+    "position": "CEO"
+  },
+  {
+    "id": 4,
+    "firstname": "Lester",
+    "lastname": "Nitzsche",
+    "emails": "Vickie.Prosacco62@example.com",
+    "department": "Tools",
+    "position": "manager"
+  },
+  {
+    "id": 5,
+    "firstname": "Levi",
+    "lastname": "Spencer",
+    "emails": "Ludie.Smitham5@gmail.com",
+    "department": "Shoes",
+    "position": "HR"
+  },
+  {
+    "id": 6,
+    "firstname": "Ashtyn",
+    "lastname": "Schamberger",
+    "emails": "Patience2@gmail.com",
+    "department": "Electronics",
+    "position": "employee"
+  },
+  {
+    "id": 7,
+    "firstname": "Tracey",
+    "lastname": "Parker",
+    "emails": "Lessie.Thiel5@gmail.com",
+    "department": "Music",
+    "position": "game dev"
+  },
+  {
+    "id": 8,
+    "firstname": "Dessie",
+    "lastname": "Huel",
+    "emails": "Kamron77@gmail.com",
+    "department": "Jewelery",
+    "position": "marketing manager"
+  },
+  {
+    "id": 9,
+    "firstname": "Jon",
+    "lastname": "Turner",
+    "emails": "Bartholome.Christiansen-Cormier@gmail.com",
+    "department": "Beauty",
+    "position": "developer"
+  },
+  {
+    "id": 10,
+    "firstname": "Austyn",
+    "lastname": "Borer",
+    "emails": "Jazmin5@example.com",
+    "department": "Movies",
+    "position": "CTO"
+  },
+  {
+    "id": 11,
+    "firstname": "Aletha",
+    "lastname": "Kassulke",
+    "emails": "Mylene63@gmail.com",
+    "department": "Baby",
+    "position": "product manager"
+  },
+  {
+    "id": 12,
+    "firstname": "Karelle",
+    "lastname": "Effertz",
+    "emails": "Velda_Barrows@gmail.com",
+    "department": "Music",
+    "position": "influncer"
+  },
+  {
+    "id": 13,
+    "firstname": "Esther",
+    "lastname": "Harris",
+    "emails": "Adah89@gmail.com",
+    "department": "Automotive",
+    "position": "assistant"
+  },
+  {
+    "id": 14,
+    "firstname": "Zion",
+    "lastname": "MacGyver-Hyatt",
+    "emails": "Elmer_Witting47@gmail.com",
+    "department": "Books",
+    "position": "indusctry"
+  }
+]
