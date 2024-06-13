@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.underline-gradient {
+  background-image: theme("colors.underline-gradient");
+  background-size: 100% 0.1em; 
+  background-position: 0 100%; 
+  background-repeat: no-repeat;
+}
