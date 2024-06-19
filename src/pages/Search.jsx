@@ -9,6 +9,8 @@ const Search = () => {
   const [title, setTitle] = useState("Тавтай морилно уу");
   const [selectedDepartment, setSelectedDepartment] = useState(""); // State for selected department
   const navigate = useNavigate();
+  const [focused, setFocused] = useState(false);
+
   const handleChange = (e) => {
     setQuery(e.target.value);
   };
@@ -16,8 +18,6 @@ const Search = () => {
   const handleDepartmentClick = (dept) => {
     setSelectedDepartment(dept === selectedDepartment ? "" : dept); // Toggle department selection
   };
-
-  const handleSelect = (employee) => {};
 
   const filteredEmployees = employees.filter(
     (emp) =>
@@ -30,11 +30,13 @@ const Search = () => {
     : employees;
 
   const handleFocus = () => {
-    setTitle(" Ажлын хамтрагчдаа үнэлгээ өгцгөөе!");
+    setTitle("Ажлын хамтрагчдаа үнэлгээ өгцгөөе!");
+    setFocused(true);
   };
 
   const handleBlur = () => {
     setTitle("Тавтай морилно уу");
+    setTimeout(() => setFocused(false), 100);
   };
 
   return (
@@ -62,16 +64,20 @@ const Search = () => {
               type="text"
               value={query}
               onChange={handleChange}
+              onFocus={() => setFocused(true)}
+              onBlur={() => setTimeout(() => setFocused(false), 100)}
             />
-            <div className="absolite bottom-[-360px]">
-              {query && (
+            <div className="absolute top-10">
+              {query && focused && (
                 <div className="bg-white w-[350px] rounded-b-xl ms-12 px-4">
                   <ul className="employee-list w-full">
                     {filteredEmployees.map((emp) => (
                       <li
                         className="text-xs border-b py-2 px-6 border-[#D4D4D4]   flex items-center gap-2"
                         key={emp.id}
-                        onClick={() => handleSelect(emp)}
+                        onClick={() => {
+                          navigate(`/employee/${emp.id}`);
+                        }}
                       >
                         <img src="./img/pfp.svg" alt="img" />
                         {emp.firstname} {emp.lastname}
@@ -121,14 +127,16 @@ const Search = () => {
                   onBlur={handleBlur}
                 />
                 <div className="absolute top-14">
-                  {query && (
+                  {query && focused && (
                     <div className="bg-white w-[320px] ms-2 rounded-b-xl px-4">
                       <ul className="employee-list w-full">
                         {filteredEmployees.map((emp) => (
                           <li
                             className="text-xs border-b py-2 px-6 border-[#D4D4D4]   flex items-center gap-2"
                             key={emp.id}
-                            onClick={() => handleSelect(emp)}
+                            onClick={() => {
+                              navigate(`/employee/${emp.id}`);
+                            }}
                           >
                             <img src="./img/pfp.svg" alt="img" />
                             {emp.firstname} {emp.lastname}

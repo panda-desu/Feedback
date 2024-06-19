@@ -4,7 +4,95 @@
 
 .underline-gradient {
   background-image: theme("colors.underline-gradient");
-  background-size: 100% 0.1em; 
-  background-position: 0 100%; 
+  background-size: 100% 0.1em;
+  background-position: 0 100%;
   background-repeat: no-repeat;
+}
+
+/* App.css */
+/* App.css */
+@keyframes fillBackgroundFromBottomLeft {
+  0% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: 0 100%;
+  }
+}
+
+.fill-animation-bottom-left {
+  background: linear-gradient(
+    to top right,
+    rgba(98, 84, 255, 0.7),
+    #5b40ff,
+    #2400ff,
+    rgba(255, 255, 255, 1),
+    rgba(255, 255, 255, 1),
+    rgba(255, 255, 255, 1)
+  );
+  background-size: 200% 200%;
+  animation: fillBackgroundFromBottomLeft 3s forwards;
+}
+
+@keyframes fillBackgroundFromBottomToTopLeft {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
+
+.fill-animation-bottom-top-left {
+  background: linear-gradient(
+    to top left,
+
+    #01cf60,
+    #46df9f,
+    #48d7b4,
+    #fff,
+    #fff,
+    #fff
+  );
+  background-size: 200% 200%;
+  background-position: 0% 100%; /* Initial state at the bottom */
+  animation: fillBackgroundFromBottomToTopLeft 3s forwards;
+}
+
+@keyframes fillBackgroundFromBottomToTop {
+  0% {
+    background-position: -20% 0%;
+  }
+  100% {
+    background-position: 20% 100%;
+  }
+}
+
+.fill-animation-bottom-top {
+  background: linear-gradient(
+    to top,
+
+    #ff5c00,
+    #ff9840,
+    #ffa354,
+    #fff,
+    #fff,
+    #fff
+  );
+  background-size: 200% 200%;
+  background-position: 0% 100%; /* Initial state at the bottom */
+  animation: fillBackgroundFromBottomToTop 3s forwards;
+}
+
+@keyframes textColorChange {
+  0% {
+    color: #636466;
+  }
+  100% {
+    color: white;
+  }
+}
+
+.text-white-animation {
+  animation: textColorChange 3s forwards;
 }
